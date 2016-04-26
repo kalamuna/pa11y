@@ -29,6 +29,7 @@
     "moment": "~2.2",
     "pa11y-webservice": "~1.8",
     "pa11y-webservice-client-node": "~1.1",
+    "phantomjs-prebuilt": "^2.1.7",
     "underscore": "~1.5"
   },
   "devDependencies": {
@@ -43,6 +44,7 @@
     "uglify-js": "~2.4"
   },
   "scripts": {
+    "prestart": "npm i",
     "start": "node index.js",
     "test": "make ci"
   }

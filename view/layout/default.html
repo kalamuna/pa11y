@@ -35,6 +35,7 @@ along with pa11y-dashboard.  If not, see <http://www.gnu.org/licenses/>.
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700,900,400italic"/>
 	<link rel="stylesheet" href="/css/site.min.css?v={{version}}"/>
 	<link rel="stylesheet" type="text/css" href="/ucsf-logo-banner.css">
+	<link rel="stylesheet" type="text/css" href="/ucsf-pa11y.css">
 
 </head>
 <!--[if IE 7]><body class="ie7"><![endif]-->
@@ -44,22 +45,20 @@ along with pa11y-dashboard.  If not, see <http://www.gnu.org/licenses/>.
 <body>
 <!--<![endif]-->
 
-	<!-- UCSF Banner -->
-	<div id="ucsf-banner-nav" class="logo">
-		<div class="inner">
-			<div>
-				<a class="logotype" href="http://www.ucsf.edu/">
-					<span>University of California San Francisco</span>
-				</a>
-			</div>
-			<div class="nav">
-				<ul>
-					<li><a href="http://www.ucsf.edu/about">About UCSF</a></li>
-					<li><a href="http://www.ucsf.edu/search">Search UCSF</a></li>
-					<li><a href="http://www.ucsfhealth.org/">UCSF Medical Center</a></li>
-				</ul>
-			</div>
-		</div>
+	<div id="ucsf-banner-nav">
+      <div class="top-header-container row">
+          <ul class="menu">
+            <li class="first"><a href="http://www.ucsf.edu">University of California San Francisco</a></li>
+            <li><a href="http://www.ucsfhealth.org/">UCSF Medical Center</a></li>
+            <li><a href="http://www.ucsf.edu/search" title="">Search UCSF</a></li>
+            <li><a href="http://www.ucsf.edu/about">About UCSF</a></li>
+          </ul>
+      </div>
+    </div>
+    <div class="header">
+		<a href="/" rel="home">
+			<img src="http://test.awareness.ucsf.edu/sites/awareness.ucsf.edu/files/da_logo.png" alt="Home">
+		</a>
 	</div>
 
 	{{> breadcrumb}}

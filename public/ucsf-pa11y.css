@@ -1,0 +1,28 @@
+/**
+ * UCSF pa11y CSS tweaks
+ */
+
+/**
+ * Set up the header
+ */
+.header {
+	text-align: center;
+	padding: 2em;
+}
+
+/**
+ * Set up the Footer
+ */
+.footer {
+	background-color: #052049;
+	color: white;
+}
+.footer a {
+	color: #b4b9bf;
+	text-decoration: none;
+}
+.footer li a:hover,
+.footer li a:focus {
+	color: white;
+	background-color: transparent;
+}

@@ -85,7 +85,7 @@ function initApp(config, callback) {
 		next();
 	});
 
-	// Allow only certain IPs:
+	// Allow only certain IPs, when not in development:
 	// http://drupal.ucsf.edu/creating-site-restricted-ucsf-network-space
 	var ips = [
 		'135.23.71.118',
@@ -98,11 +98,13 @@ function initApp(config, callback) {
 			ips.push('64.54.' + x + '.' + y);
 		}
 	}
-	app.express.use(require('express-ip-access-control')({
-		mode: 'allow',
-		allows: ips,
-		message: 'Ensure you visit the dashboard from a UCSF IP.'
-	}));
+	if (!process.env.DEVELOPMENT) {
+		app.express.use(require('express-ip-access-control')({
+			mode: 'allow',
+			allows: ips,
+			message: 'Ensure you visit the dashboard from a UCSF IP.'
+		}));
+	}
 
 	// Load routes
 	require('./route/index')(app);

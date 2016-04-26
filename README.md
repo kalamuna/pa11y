@@ -1,3 +1,19 @@
+# pa11y-dashboard for UCSF
+
+This is the [pa11y](http://pa11y.org/) dashboard built for [UCSF](https://www.ucsf.edu/).
+
+## Development
+
+1. Install [Docker Compose](https://www.docker.com/products/docker-compose)
+  - Comes with the [Docker Beta](https://beta.docker.com) on Mac/Windows
+
+2. Run with Docker Compose
+  ```
+  docker-compose up
+  ```
+
+3. Visit the dashboard at [`http://localhost:8000`](http://localhost:8000)
+
 pa11y-dashboard
 ===============
 
