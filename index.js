@@ -15,6 +15,9 @@
 
 'use strict';
 
+// Force the environment to be production.
+process.env.NODE_ENV = 'production';
+
 var chalk = require('chalk');
 var config = require('./config/' + (process.env.NODE_ENV || 'development') + '.json');
 
