@@ -85,6 +85,25 @@ function initApp(config, callback) {
 		next();
 	});
 
+	// Allow only certain IPs:
+	// http://drupal.ucsf.edu/creating-site-restricted-ucsf-network-space
+	var ips = [
+		'135.23.71.118',
+		'70.36.226.29'
+	];
+	for (var x = 0; x < 256; x++) {
+		for (var y = 0; y < 256; y++) {
+			ips.push('169.230.' + x + '.' + y);
+			ips.push('128.218.' + x + '.' + y);
+			ips.push('64.54.' + x + '.' + y);
+		}
+	}
+	app.express.use(require('express-ip-access-control')({
+		mode: 'allow',
+		allows: ips,
+		message: 'Ensure you visit the dashboard from a UCSF IP.'
+	}));
+
 	// Load routes
 	require('./route/index')(app);
 	require('./route/task/index')(app);

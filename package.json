@@ -1,48 +1,49 @@
 {
-	"name": "pa11y-dashboard",
-	"version": "1.9.0",
-	"private": true,
-
-	"description": "pa11y-dashboard is a visual web interface to the pa11y accessibility reporter",
-	"keywords": [ "accessibility", "analysis", "report" ],
-	"contributors": [
-		"Perry Harlock (http://www.phwebs.co.uk/)",
-		"Rowan Manning (http://rowanmanning.com/)"
-	],
-
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/springernature/pa11y-dashboard.git"
-	},
-	"homepage": "https://github.com/springernature/pa11y-dashboard",
-	"bugs": "https://github.com/springernature/pa11y-dashboard/issues",
-
-	"engines": {
-		"node": ">=0.10"
-	},
-	"dependencies": {
-		"chalk": "~0.2",
-		"express": "~3.4",
-		"express-hbs": "~0.2",
-		"moment": "~2.2",
-		"pa11y-webservice": "~1.8",
-		"pa11y-webservice-client-node": "~1.1",
-		"underscore": "~1.5"
-	},
-	"devDependencies": {
-		"bower": "~1.2",
-		"jscs": "^2",
-		"jsdom": "^3",
-		"jshint": "^2",
-		"less": "~1.5",
-		"mocha": "^2",
-		"proclaim": "^3",
-		"request": "~2.27",
-		"uglify-js": "~2.4"
-	},
-
-	"scripts": {
-		"start": "node index.js",
-		"test": "make ci"
-	}
+  "name": "pa11y-dashboard",
+  "version": "1.9.0",
+  "private": true,
+  "description": "pa11y-dashboard is a visual web interface to the pa11y accessibility reporter",
+  "keywords": [
+    "accessibility",
+    "analysis",
+    "report"
+  ],
+  "contributors": [
+    "Perry Harlock (http://www.phwebs.co.uk/)",
+    "Rowan Manning (http://rowanmanning.com/)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/springernature/pa11y-dashboard.git"
+  },
+  "homepage": "https://github.com/springernature/pa11y-dashboard",
+  "bugs": "https://github.com/springernature/pa11y-dashboard/issues",
+  "engines": {
+    "node": ">=0.10"
+  },
+  "dependencies": {
+    "chalk": "~0.2",
+    "express": "~3.4",
+    "express-hbs": "~0.2",
+    "express-ip-access-control": "^1.0.5",
+    "moment": "~2.2",
+    "pa11y-webservice": "~1.8",
+    "pa11y-webservice-client-node": "~1.1",
+    "underscore": "~1.5"
+  },
+  "devDependencies": {
+    "bower": "~1.2",
+    "jscs": "^2",
+    "jsdom": "^3",
+    "jshint": "^2",
+    "less": "~1.5",
+    "mocha": "^2",
+    "proclaim": "^3",
+    "request": "~2.27",
+    "uglify-js": "~2.4"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "make ci"
+  }
 }
