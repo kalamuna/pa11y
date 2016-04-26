@@ -1,4 +1,4 @@
-{{! 
+{{!
 This file is part of pa11y-dashboard.
 
 pa11y-dashboard is free software: you can redistribute it and/or modify
@@ -34,6 +34,7 @@ along with pa11y-dashboard.  If not, see <http://www.gnu.org/licenses/>.
 
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700,900,400italic"/>
 	<link rel="stylesheet" href="/css/site.min.css?v={{version}}"/>
+	<link rel="stylesheet" type="text/css" href="/ucsf-logo-banner.css">
 
 </head>
 <!--[if IE 7]><body class="ie7"><![endif]-->
@@ -43,7 +44,23 @@ along with pa11y-dashboard.  If not, see <http://www.gnu.org/licenses/>.
 <body>
 <!--<![endif]-->
 
-	{{> page-header}}
+	<!-- UCSF Banner -->
+	<div id="ucsf-banner-nav" class="logo">
+		<div class="inner">
+			<div>
+				<a class="logotype" href="http://www.ucsf.edu/">
+					<span>University of California San Francisco</span>
+				</a>
+			</div>
+			<div class="nav">
+				<ul>
+					<li><a href="http://www.ucsf.edu/about">About UCSF</a></li>
+					<li><a href="http://www.ucsf.edu/search">Search UCSF</a></li>
+					<li><a href="http://www.ucsfhealth.org/">UCSF Medical Center</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
 	{{> breadcrumb}}
 
