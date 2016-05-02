@@ -102,7 +102,8 @@ function initApp(config, callback) {
 		app.express.use(require('express-ip-access-control')({
 			mode: 'allow',
 			allows: ips,
-			message: 'Ensure you visit the dashboard from a UCSF IP.'
+			redirectTo: 'http://help.ucsf.edu/HelpApps/ipNetVerify.php',
+			statusCode: 302
 		}));
 	}
 
