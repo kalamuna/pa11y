@@ -109,7 +109,8 @@ function initApp(config, callback) {
 
 	// HTTP Authentication.
 	if (process.env.NODE_ENV == 'private') {
-		app.express.use(require('basic-auth-connect')('kala', 'kala'));
+		var user = require('./config/user.json');
+		app.express.use(require('basic-auth-connect')(user.name, user.pass));
 	}
 
 	// Load routes
