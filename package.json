@@ -22,6 +22,7 @@
     "node": ">=0.10"
   },
   "dependencies": {
+    "basic-auth-connect": "^1.0.0",
     "chalk": "~0.2",
     "express": "~3.4",
     "express-hbs": "~0.2",
