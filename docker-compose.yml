@@ -15,7 +15,7 @@ web:
 
   # Make pa11y-dashboard run with production settings
   environment:
-    NODE_ENV: public # Depicts which config file to use
+    NODE_ENV: docker-compose # Depicts which config file to use
     DEVELOPMENT: y # Run in development mode
 
   # When booted, run node.
