@@ -5,29 +5,37 @@ This is the [pa11y](http://pa11y.org/) dashboard built for [UCSF](https://www.uc
 ## Development
 
 1. Install [Docker Compose](https://www.docker.com/products/docker-compose)
-  - Comes with the [Docker Beta](https://beta.docker.com) on Mac/Windows
+	- Comes with the [Docker Beta](https://beta.docker.com) on Mac/Windows
 
 2. Copy the following into `config/production.json`
-  ``` json
-  {
-    "port": 80,
-    "noindex": true,
-    "readonly": false,
-    "webservice": {
-      "database": "mongodb://mongodb/pa11y-webservice",
-      "host": "0.0.0.0",
-      "port": 3000,
-      "cron": "0 30 0 * * *"
-    }
-  }
-  ```
+	``` json
+	{
+		"port": 80,
+		"noindex": true,
+		"readonly": false,
+		"webservice": {
+			"database": "mongodb://mongodb/pa11y-webservice",
+			"host": "0.0.0.0",
+			"port": 3000,
+			"cron": "0 30 0 * * *"
+		}
+	}
+	```
 
-2. Run with Docker Compose
-  ```
-  docker-compose up
-  ```
+3. Add the user credentials at `config/user.json`:
+	``` json
+	{
+		"name": "kala",
+		"pass": "kala"
+	}
+	```
 
-3. Visit the dashboard at [`http://localhost:8000`](http://localhost:8000)
+4. Run with Docker Compose
+	```
+	docker-compose up
+	```
+
+5. Visit the dashboard at [`http://localhost:8000`](http://localhost:8000)
 
 pa11y-dashboard
 ===============
