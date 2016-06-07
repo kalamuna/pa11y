@@ -69,3 +69,8 @@
 	background-color: #052049;
 	border-color: #052049;
 }
+
+.stat-type {
+	opacity: 1;
+	filter: none;
+}
