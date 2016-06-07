@@ -70,7 +70,17 @@
 	border-color: #052049;
 }
 
+/**
+ * Make the text on the report screen completely white
+ */
 .stat-type {
 	opacity: 1;
 	filter: none;
+}
+
+/**
+ * Hide the Ignore Rule button on report screen.
+ */
+.readonly-mode input.btn-sm {
+    display: none;
 }
