@@ -98,7 +98,11 @@ function initApp(config, callback) {
 			ips.push('64.54.' + x + '.' + y);
 		}
 	}
-	if (!process.env.DEVELOPMENT) {
+	var restrictIp = process.env.NODE_ENV != 'private';
+	if (process.env.DEVELOPMENT) {
+		restrictIp = false;
+	}
+	if (restrictIp) {
 		app.express.use(require('express-ip-access-control')({
 			mode: 'allow',
 			allows: ips,
