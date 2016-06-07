@@ -26,3 +26,46 @@
 	color: white;
 	background-color: transparent;
 }
+
+/**
+ * UCSF Branding Colors for the buttons
+ */
+.danger,
+#errors,
+.alert-danger {
+	background-color: #EB093C;
+}
+.task-danger,
+.alert-danger {
+	border-color: #EB093C;
+}
+
+.warning,
+#warnings {
+	background-color: #F26D04;
+}
+
+.task-warning {
+	border-color: #F26D04;
+}
+
+.info,
+#notices {
+	background-color: #007CBE;
+}
+
+.task-info {
+	border-color: #007CBE;
+}
+
+.btn-default,
+.label-default,
+.btn-success {
+	background-color: #4D4D4D;
+	border-color: #4D4D4D;
+}
+
+.dark-well {
+	background-color: #052049;
+	border-color: #052049;
+}
