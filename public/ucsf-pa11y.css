@@ -28,10 +28,12 @@
 }
 
 body .danger,
-#errors {
+#errors,
+body .alert-danger {
 	background-color: #EB093C;
 }
-body .task-danger {
+body .task-danger,
+body .alert-danger {
 	border-color: #EB093C;
 }
 
