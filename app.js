@@ -88,8 +88,8 @@ function initApp(config, callback) {
 	// Allow only certain IPs, when not in development:
 	// http://drupal.ucsf.edu/creating-site-restricted-ucsf-network-space
 	var ips = [
-		'135.23.71.118',
-		'70.36.226.29'
+		'135.23.71.118', // Rob Loach
+		'70.36.226.29' // Kalamuna office
 	];
 	for (var x = 0; x < 256; x++) {
 		for (var y = 0; y < 256; y++) {
