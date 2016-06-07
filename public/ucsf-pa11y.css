@@ -26,3 +26,41 @@
 	color: white;
 	background-color: transparent;
 }
+
+body .danger,
+#errors {
+	background-color: #EB093C;
+}
+body .task-danger {
+	border-color: #EB093C;
+}
+
+body .warning,
+#warnings {
+	background-color: #F26D04;
+}
+
+body .task-warning {
+	border-color: #F26D04;
+}
+
+body .info,
+#notices {
+	background-color: #007CBE;
+}
+
+body .task-info {
+	border-color: #007CBE;
+}
+
+body .btn-default,
+body .label-default,
+body .btn-success {
+	background-color: #4D4D4D;
+	border-color: #4D4D4D;
+}
+
+body .dark-well {
+	background-color: #052049;
+	border-color: #052049;
+}
