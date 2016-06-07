@@ -27,42 +27,45 @@
 	background-color: transparent;
 }
 
-body .danger,
+/**
+ * UCSF Branding Colors for the buttons
+ */
+.danger,
 #errors,
-body .alert-danger {
+.alert-danger {
 	background-color: #EB093C;
 }
-body .task-danger,
-body .alert-danger {
+.task-danger,
+.alert-danger {
 	border-color: #EB093C;
 }
 
-body .warning,
+.warning,
 #warnings {
 	background-color: #F26D04;
 }
 
-body .task-warning {
+.task-warning {
 	border-color: #F26D04;
 }
 
-body .info,
+.info,
 #notices {
 	background-color: #007CBE;
 }
 
-body .task-info {
+.task-info {
 	border-color: #007CBE;
 }
 
-body .btn-default,
-body .label-default,
-body .btn-success {
+.btn-default,
+.label-default,
+.btn-success {
 	background-color: #4D4D4D;
 	border-color: #4D4D4D;
 }
 
-body .dark-well {
+.dark-well {
 	background-color: #052049;
 	border-color: #052049;
 }
