@@ -18,10 +18,10 @@ along with pa11y-dashboard.  If not, see <http://www.gnu.org/licenses/>.
 <ul class="list-unstyled clearfix crunch-bottom">
 	<li class="col-md-4 col-sm-6 task-card add-task">
 		{{#if readonly}}
-			<span class="well task-card-link crunch-bottom">
+			<a class="well task-card-link crunch-bottom" data-role="add-task" href="http://digitalaccess.ucsf.edu/add-pa11y" data-test="add-task">
 				<p class="h3 crunch">Add new URL</p>
 				<p class="supersize-me crunch">+</p>
-			</span>
+			</a>
 		{{else}}
 			<a class="well task-card-link crunch-bottom" data-role="add-task" href="/new" data-test="add-task">
 				<p class="h3 crunch">Add new URL</p>
