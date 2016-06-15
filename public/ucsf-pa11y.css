@@ -32,6 +32,7 @@
  */
 .danger,
 #errors,
+.error,
 .alert-danger {
 	background-color: #EB093C;
 }
