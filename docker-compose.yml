@@ -1,0 +1,39 @@
+# Docker Compose to run UCSF pa11y Dashboard
+# https://www.docker.com/products/docker-compose
+web:
+  # Build the image off of Node.js 5
+  # https://hub.docker.com/r/_/node/
+  image: node:5
+
+  # Host machine's port 8000 is mapped to pa11y's port 80
+  ports:
+    - "8000:80"
+
+  # Connect to the Mongo database
+  links:
+    - database:mongodb
+
+  # Make pa11y-dashboard run with production settings
+  environment:
+    NODE_ENV: docker-compose # Depicts which config file to use
+    DEVELOPMENT: y # Run in development mode
+    PORT: 80
+    WEBSERVICE_DATABASE: mongodb://mongodb/pa11y-webservice
+    WEBSERVICE_HOST: 0.0.0.0
+    WEBSERVICE_PORT: 3000
+    WEBSERVICE_CRON: "0 30 0 * * *"
+
+  # When booted, run node.
+  command: npm start
+
+  # Mount pa11y-dashboard folder to /app
+  volumes:
+    - .:/app
+
+  # Begin running in the application directory
+  working_dir: /app
+
+database:
+  image: mongo:3.2
+  ports:
+    - "27017"
