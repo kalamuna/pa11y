@@ -1,4 +1,4 @@
-process.env.PORT = 80
+process.env.PORT = 8000
 process.env.NOINDEX = true
 process.env.READONLY = false
 process.env.WEBSERVICE_DATABASE = 'mongodb://localhost/pa11y-webservice'
